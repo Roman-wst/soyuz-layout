@@ -1,0 +1,26 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-76 -137)">
+<g id="Group">
+<g id="ic_mode_edit_black_24px">
+<g id="Vector">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(76 137)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(76 137)" fill="#979797"/>
+</g>
+</g>
+</g>
+<g id="Vector 4">
+<use xlink:href="#path2_stroke" transform="translate(82 143)" fill="#979797"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0C 18.6274 0 24 5.37258 24 12C 24 18.6274 18.6274 24 12 24C 5.37258 24 0 18.6274 0 12Z"/>
+<path id="path1_stroke_2x" d="M 12 -2C 4.26801 -2 -2 4.26801 -2 12L 2 12C 2 6.47715 6.47715 2 12 2L 12 -2ZM 12 2C 17.5228 2 22 6.47715 22 12L 26 12C 26 4.26801 19.732 -2 12 -2L 12 2ZM 22 12C 22 17.5228 17.5228 22 12 22L 12 26C 19.732 26 26 19.732 26 12L 22 12ZM 12 22C 6.47715 22 2 17.5228 2 12L -2 12C -2 19.732 4.26801 26 12 26L 12 22Z"/>
+<path id="path2_stroke" d="M 5 0L 5 6L 7 6L 7 0L 5 0ZM 5 6L 5 12L 7 12L 7 6L 5 6ZM 6 7L 12 7L 12 5L 6 5L 6 7ZM 6 5L 0 5L 0 7L 6 7L 6 5Z"/>
+</defs>
+</svg>

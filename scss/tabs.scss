@@ -1,0 +1,25 @@
+.tabs {
+	margin: 16px -1px 24px 0;
+	font-size: 12px;
+	line-height: 14px;
+	border: 1px solid #8D8E90;
+	border-radius: 2px;
+	li {
+		display: block;
+		text-align: center;
+		width: 100%;
+		&:last-child a {
+			border-right-width: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 5px;
+		border-right: 1px solid #8D8E90;
+		&:hover, &:active, &.active {
+			background-color: #8D8E90;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.logo {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.logo-text {
+  width: 136px;
+  margin: 8px auto 25px auto;
+  font-size: 13px;
+  line-height: 15px;
+  color: #EB5757;
+  text-transform: uppercase;
+}
+
+.page-reg, .page-auth {
+  .form-actions .btn {
+    margin-bottom: 8px;
+    min-width: 166px;
+  }
+}
+
+
+.ic-logo {
+  width: 138px;
+  height: 31px;
+
+}
+
+.site-greeting {
+  font-size: 16px;
+  line-height: 23px;
+  color: #333;
+  margin-bottom: 32px;
+  span {
+    display: block;
+  }
+}
+
+.reg-invite .site-greeting {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+
+.tabs-auth {
+  li {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  a {
+    display: block;
+    position: relative;
+    padding: 11px 16px;
+    text-decoration: underline;
+    border-radius: 2px;
+    &.active {
+      background-color: #8D8E90;
+      color: #fff;
+      text-decoration: none;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top-color: #8d8e90;
+      }
+    }
+  }
+}
+
+.restore-or-reg {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 16px;
+}
+

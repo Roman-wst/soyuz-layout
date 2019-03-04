@@ -1,0 +1,475 @@
+$form-element-size: 14px;
+$btn-bg-red: #EB5757;
+$btn-bg-gray: #D9DADD;
+
+.form {
+  margin-top: 24px;
+  &-group {
+    margin-bottom: 24px;
+    &.last {
+      margin-bottom: 16px;
+    }
+    .lbl {
+      margin-bottom: 5px;
+      display: block;
+      color: #666;
+    }
+  }
+  .lbl, &-it, .i-group-addon, &-txt, &-sel {
+    font-size: $form-element-size;
+    line-height: $form-element-size + 2;
+  }
+  &-sel {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  }
+  &-it, &-txt, &-sel {
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #333;
+  }
+
+  &-it, &-txt {
+    border: 2px solid #999;
+    &:disabled {
+      background-color: #d4d4d4;
+      opacity: 1;
+      /*color: #000;*/
+      color: #666;
+    }
+
+  }
+  &-txt {
+    resize: none;
+  }
+
+  &-desc {
+    margin-top: 4px;
+    margin-left: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #747474;
+  }
+
+  &-actions {
+    text-align: center;
+    .btn {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-id {
+    position: relative;
+    .form-it {
+      padding-right: 0;
+      padding-left: 4px;
+      width: 132px;
+			&:active, &:hover, &:focus {
+				& + .ic-calendar {
+					display: none;
+				}
+			}
+    }
+    .ic-calendar {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      margin-top: -6px;
+    }
+  }
+
+  a {
+    color: #3467AA;
+    text-decoration: underline;
+    &:hover {
+      color: lighten(#3467AA, 5%);
+    }
+  }
+
+  &-ich {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+    & + label {
+      cursor: pointer;
+    }
+    &:not(checked) {
+      position: absolute;
+      opacity: 0;
+      & + label {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 76px;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          transition: all .2s;
+        }
+      }
+    }
+  }
+  &-ich {
+    & + label:after {
+      background: #009688;
+    }
+    & + label:before {
+      background: #76C2BC;
+    }
+    &:not(checked) + label {
+      padding: 0 0 0 40px;
+      &:before {
+        top: 3px;
+        width: 34px;
+        height: 14px;
+        border-radius: 13px;
+      }
+      &:after {
+        top: 0;
+        left: 74px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+      }
+    }
+    &:checked + label {
+      &:after {
+        left: 92px;
+      }
+    }
+
+  }
+
+}
+
+.mobile .form-id .ic-calendar {
+  display: none;
+}
+
+.separate {
+  padding: 0 6px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  padding: 6px 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.btn, .form a.btn {
+  text-decoration: none;
+  color: #6B6C6D;
+  &:hover {
+    color: darken(#6B6C6D, 10%);
+  }
+}
+
+.size {
+  &-lg {
+    font-size: $form-element-size;
+    line-height: $form-element-size + 2;
+    padding: 10px 14px;
+  }
+  &-md {
+    font-size: $form-element-size - 2;
+    line-height: $form-element-size;
+  }
+}
+
+.round-corn {
+  border-radius: 2px;
+}
+
+.with-brd {
+  border: 1px solid #6B6C6D;
+  height: 26px;
+  &:hover {
+    border-color: darken(#6B6C6D, 10%);
+    background-color: lighten(#6B6C6D, 40%);
+  }
+}
+
+.bg {
+  &-red {
+    background-color: $btn-bg-red;
+    color: #fff !important;
+    &:hover, &:active {
+      background-color: lighten($btn-bg-red, 5%);
+    }
+  }
+  &-gray {
+    background-color: $btn-bg-gray;
+    color: #6A6B6C;
+    &:hover, &:active {
+      background-color: darken($btn-bg-gray, 5%);
+    }
+  }
+}
+
+.type-ich {
+  display: table;
+  .lbl-ich, .form-ich {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .form-ich {
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+  .lbl-ich {
+    color: #858585;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.pseudo-ich label {
+  display: table;
+  .form-ich {
+    display: none;
+    &:checked + .custom-ich::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      background-color: #a9a9a9;
+    }
+  }
+  .custom-ich, .lbl-ich {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .custom-ich {
+    display: block;
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #888888;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+}
+
+.iphone .pseudo-ich .custom-ich {
+  border-radius: 11px;
+}
+
+.iphone .pseudo-ich .form-ich:checked + .custom-ich::before {
+  border-radius: 5px;
+}
+
+.i-group {
+  display: table;
+  width: 100%;
+  &-addon, .form-it {
+    display: table-cell;
+  }
+  &-addon {
+    width: 1%;
+    padding: 8px 8px 8px 7px;
+    border: 2px solid #999;
+    border-radius: 2px 0 0 2px;
+    background-color: #E1E1E1;
+    color: #000;
+  }
+  .form-it {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.full-width, .range {
+  width: 100%;
+}
+
+.sticky-actions {
+  padding-bottom: 12px;
+  .form-actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 7;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #DADCDF;
+    .btn {
+      width: 85px;
+      margin-top: 16px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.more-actions {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  .ic {
+    &-svg {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &-text {
+      margin-left: 10px;
+    }
+    &-close {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .content {
+    position: fixed;
+    bottom: 58px;
+    left: 50%;
+    max-width: 300px;
+    padding: 30px 16px 8px;
+    background-color: #fff;
+    margin-left: -150px;
+  }
+  .more-close {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+  }
+  .btn {
+    padding: 6px 10px 5px 18px;
+    text-decoration: none;
+    color: #6B6C6D;
+    &:hover, &:active {
+      color: #6B6C6D;
+    }
+  }
+
+}
+
+.page-settings-edit {
+  .range-element {
+    max-width: 188px;
+    padding-right: 20px;
+    .slider {
+      margin-bottom: 0 !important;
+    }
+    .slider-tick-label-container {
+      opacity: 0;
+    }
+  }
+  .choice-of-share {
+    @extend .range-element;
+    flex-basis: 188px;
+    & + .form-it {
+      flex-basis: 100px;
+    }
+    .percent, .rouble {
+      position: absolute;
+      left: 0;
+      top: 1px;
+    }
+    .rouble {
+      left: 120px;
+    }
+    span {
+      color: #999;
+    }
+    .active {
+      color: #009688;
+    }
+  }
+}
+
+/* add file */
+.img {
+  &-load {
+    .form-f {
+      display: none;
+    }
+    &-list {
+      display: inline-block;
+      .ic-add {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -20px;
+        margin-top: -20px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border: 3px solid #666;
+        border-radius: 100%;
+        fill: #666;
+      }
+    }
+  }
+
+  &-add, &-preview {
+    position: relative;
+    float: left;
+    width: 136px;
+    height: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+    &::after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+
+  &-add {
+    background-color: #D9DADD;
+    &:hover {
+      background-color: darken(#D9DADD, 10%);
+    }
+  }
+
+
+  &-preview {
+    display: none;
+    margin-right: 16px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

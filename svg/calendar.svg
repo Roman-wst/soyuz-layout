@@ -1,0 +1,14 @@
+<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>iconmonstr-calendar-4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(438 -746)">
+<g id="iconmonstr-calendar-4">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-438 746)" fill="#999999"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 10 10L 8 10L 8 8L 10 8L 10 10ZM 7 5L 5 5L 5 7L 7 7L 7 5ZM 10 5L 8 5L 8 7L 10 7L 10 5ZM 4 8L 2 8L 2 10L 4 10L 4 8ZM 7 8L 5 8L 5 10L 7 10L 7 8ZM 4 5L 2 5L 2 7L 4 7L 4 5ZM 12 1L 12 12L 0 12L 0 1L 1.5 1L 1.5 1.5C 1.5 2.0515 1.9485 2.5 2.5 2.5C 3.0515 2.5 3.5 2.0515 3.5 1.5L 3.5 1L 8.5 1L 8.5 1.5C 8.5 2.0515 8.9485 2.5 9.5 2.5C 10.0515 2.5 10.5 2.0515 10.5 1.5L 10.5 1L 12 1ZM 11 4L 1 4L 1 11L 11 11L 11 4ZM 10 0.5C 10 0.224 9.7765 0 9.5 0C 9.2235 0 9 0.224 9 0.5L 9 1.5C 9 1.776 9.2235 2 9.5 2C 9.7765 2 10 1.776 10 1.5L 10 0.5ZM 3 1.5C 3 1.776 2.7765 2 2.5 2C 2.2235 2 2 1.776 2 1.5L 2 0.5C 2 0.224 2.2235 0 2.5 0C 2.7765 0 3 0.224 3 0.5L 3 1.5Z"/>
+</defs>
+</svg>

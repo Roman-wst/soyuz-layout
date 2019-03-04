@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoSlabBold";
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoSlabLight";
+  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
+  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"), url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.btn, .print-title {
+  font-family: RobotoMedium, sans-serif; }
+
+.offer-list .discount, .all-sum, .logo-text {
+  font-family: RobotoBold, serif; }
+
+body {
+  background-color: #EBEDF0;
+  font-family: RobotoRegular, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+  min-width: 320px;
+  margin-bottom: 48px;
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.content {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto; }
+
+.text-l {
+  text-align: left; }
+.text-c {
+  text-align: center; }
+.text-r {
+  text-align: right; }
+
+.ic-group, .flex-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+
+.nav, .header, .btn, .bumper.last {
+  display: none !important;
+}
+
+.separate {
+  padding: 0 6px; }
+
+.size-lg {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 14px; }
+.size-md {
+  font-size: 12px;
+  line-height: 14px; }
+
+.round-corn {
+  border-radius: 2px; }
+
+.with-brd {
+  border: 1px solid #6B6C6D;
+  height: 26px; }
+
+.bg-red {
+  background-color: #EB5757;
+  color: #fff; }
+  .bg-red:hover, .bg-red:active {
+    background-color: #ee6e6e; }
+.bg-gray {
+  background-color: #D9DADD;
+  color: #6A6B6C; }
+  .bg-gray:hover, .bg-gray:active {
+    background-color: #cccdd1; }
+
+/*page add promocode*/
+.promocode {
+  font-family: RobotoSlabLight, sans-serif;
+  font-size: 42px;
+  line-height: 55px;
+  margin-top: 43px;
+  margin-bottom: 24px;
+  color: #000; }
+  .promocode-activated {
+    font-family: RobotoBold, sans-serif;
+    color: #219653;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 23px; }
+  .promocode-status {
+    text-align: center;
+    margin-bottom: 34px; }
+    .promocode-status .ic-svg {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px; }
+
+.bumper {
+  border-bottom: 1px solid #DBDCDF;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.page-activated-promocode .btn {
+  display: block;
+  width: 104px;
+  margin: 16px auto;
+  text-align: center; }
+.page-activated-promocode .pseudo-cell {
+  font-size: 18px;
+  line-height: 32px; }
+  .page-activated-promocode .pseudo-cell:first-child {
+    width: 164px; }
+
+.hide-source, .print-title {
+  display: block !important; }
+
+.print-title {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 33px;
+  margin-bottom: 48px;
+}
+

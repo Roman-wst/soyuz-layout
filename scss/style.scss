@@ -1,0 +1,147 @@
+$bg-body: #EBEDF0;
+$bg-header: #DADCDF;
+$color-text: #666;
+$font-size: 14px;
+
+@import 'fonts';
+
+body {
+  background-color: $bg-body;
+  font-family: RobotoRegular, sans-serif;
+  font-size: $font-size;
+  line-height: $font-size + 2;
+  color: $color-text;
+  min-width: 320px;
+  padding-top: 65px;
+  margin-bottom: 48px;
+  overflow-x: hidden;
+}
+
+.page-reg, .page-auth {
+  padding-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+  background-color: $bg-header;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  min-height: 65px;
+  & .pseudo-cell:first-child {
+    padding-right: 21px;
+  }
+}
+
+.page-title {
+  color: #000;
+  font-size: 20px;
+  line-height: 23px;
+  padding-right: 10px;
+}
+
+.with-step-back .page-title {
+  font-size: 14px;
+  line-height: 16px;
+  height: 33px;
+  min-width: 218px;
+  padding-left: 20px;
+  display: block;
+}
+
+.ic-back {
+  width: 20px;
+  height: 20px;
+}
+
+.truncated {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.desktop .header .content,
+.tablet .header .content {
+  max-width: 800px;
+}
+
+.text {
+  &-l {
+    text-align: left;
+  }
+  &-c {
+    text-align: center;
+  }
+  &-r {
+    text-align: right;
+  }
+}
+
+.ic-group, .flex-box {
+  display: -ms-flexbox;
+  display: flex;
+	
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.header .flex-box {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.pseudo {
+  &-tbl {
+    display: table;
+    width: 100%;
+  }
+  &-row {
+    display: table-row;
+  }
+  &-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.tablet .hide-on-tablet, .mobile .hide-on-mob, .desktop .hide-on-desk, .print-title {
+  display: none;
+}
+
+
+
+@import 'menu';
+@import 'reg';
+@import 'tabs';
+@import 'forms_element';
+@import 'features';
+@import 'popup';
+@import 'promocode';
